@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>WEB Calculator- by Amit chaursiya </title>
+      
+
+
+        
+    </head>
+    <body>
+       <script> 
+
+   function pick(val)
+            {
+                document . getElementById("a") . value +=val;
+
+            }
+   function clr( )
+            {
+                document . getElementById("a") . value  = "   " ;
+
+            }
+            function solve()
+            {
+               var x=document . getElementById("a") . value ;
+               var y=eval (x) ;
+               document . getElementById("a") . value=y;
+            }
+
+
+      </script>
+        <table style="background-color:rgb(0, 0, 0)">
+        <tr>
+
+            <td colspan="3"><input type="text" Id="a">
+            <td><input type="button" value="C" onclick="clr ( )">
+        </tr>
+        <tr>
+         <td><input type="button" value="1" onclick="pick(1)">
+          <td><input type="button" value="2" onclick="pick(2)">
+         <td><input type="button" value="3"  onclick="pick(3)">
+         <td><input type="button" value="/"  onclick="pick('/')">
+      </tr>
+    <tr>
+     <td><input type="button" value="4"  onclick="pick(4)">
+        <td><input type="button" value="5"  onclick="pick(5)">
+     <td><input type="button" value="6"  onclick="pick(6)">
+  <td><input type="button" value="*"  onclick="pick('*')">
+ </tr>
+        <tr>
+        <td><input type="button" value="7"  onclick="pick(7)">
+        <td><input type="button" value="8"  onclick="pick(8)">
+        <td><input type="button" value="9"  onclick="pick(9)">
+         <td><input type="button" value="-"  onclick="pick('-')">
+         </tr>
+        <tr>
+         <td><input type="button" value="."  onclick="pick('*')">
+         <td><input type="button" value="0"  onclick="pick(0)">
+         <td><input type="button" value="="  onclick="solve()">
+         <td><input type="button" value="+"  onclick="pick('+')">
+        </tr>
+    </table>
+
+    </body>
+</html>
